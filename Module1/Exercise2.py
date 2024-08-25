@@ -1,4 +1,3 @@
-
 #2.1
 name=input("What is your name? ")
 print("Hello, " + name + "!")
@@ -38,6 +37,7 @@ kilograms=int(all_grams//1000) #// means division for integer result
 grams=all_grams%1000 #% means modulo (remainder of dividing)
 print(f"The total weight in modern units: \n{kilograms} kilograms and {grams:.2f} grams.")
 
+#2.6
 import random #Python's random module
 number1=random.randint(0,9)
 number2=random.randint(0,9)
