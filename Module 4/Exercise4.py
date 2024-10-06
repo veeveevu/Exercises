@@ -27,8 +27,8 @@ while True:
         if smallest is None or value1 < smallest:
             smallest = value1
 if largest is not None and smallest is not None:
-    print(f"Largest: {largest}")
-    print(f"Smallest: {smallest}")
+    print(f"Largest number: {largest}")
+    print(f"Smallest number: {smallest}")
 
 #4.4
 import random
