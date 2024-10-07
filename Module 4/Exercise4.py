@@ -6,12 +6,13 @@ while number <= 1000:
     number += 1
 
 #4.2
-num = float(input("Insert value in inches: "))
-while num >= 0:
-    print(f"In centimeters: {num*2.54}")
-    num = float(input("Insert another value in inches: "))
-else:
-    print("Invalid!")
+num = input("Insert value in inches: ")
+while True:
+    if float(num) >= 0:
+        print(f"In centimeters: {float(num)*2.54}")
+        num = float(input("Insert another value in inches: "))
+    else:
+        print("Invalid!")
 
 #4.3
 largest = None
