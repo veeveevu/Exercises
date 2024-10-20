@@ -30,11 +30,11 @@ elif input_integer == 0 or input_integer == 1:
 else:
     for i in range(2, input_integer):
         if input_integer % i == 0:
-            print("This is not a prime number")
+            print("This is not a prime number.")
             break
         i += 1
     else:
-        print("This is a prime number")
+        print("This is a prime number.")
 
 #5.4
 print("Exercise 5.4")
