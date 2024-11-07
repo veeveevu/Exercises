@@ -17,13 +17,13 @@ print("-"*88)
 print(f"Exercise 12.2")
 try:
     city_input = input("Give the name of the city: ")
-    response_city = requests.get(f"http://api.openweathermap.org/geo/1.0/direct?q={city_input}&limit=1&appid=724d6c5f72c74a7266e483abaab59b87")
+    response_city = requests.get(f"http://api.openweathermap.org/geo/1.0/direct?q={city_input}&limit=1&appid={ipa key}")
     if response_city.status_code == 200:
         city_result = response_city.json()
         city = city_result[0]
         lat = city["lat"]
         lon = city["lon"]
-        response_weather = requests.get(f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=724d6c5f72c74a7266e483abaab59b87")
+        response_weather = requests.get(f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={ipa key}")
         if response_weather.status_code == 200:
             weather_result = response_weather.json()
 
